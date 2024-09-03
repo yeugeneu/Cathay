@@ -1,14 +1,15 @@
 
 
 def print_triangle(n):
-    for i in range(1, n+1):
-        if (i==1): # first line
-            print((n-1)* " " + "*") # (n-1) x spaces + '*'
-        elif (i == n): # last line
-            print("* " * (n-1) + "*") # repeat '* ' n-1 times and add a last '*' at the end 
-        else:
-            print((n-i) * " " + "*" + ((i-2)*2+1) * " " + "*") 
-        
+    for i in range(n):
+        spaces = " " * (n - i - 1)
+        if i == 0: # first line
+            print(spaces + "*")
+        elif i == n - 1: # last line
+            print("* " * n)
+        else: # in between lines
+            inner_spaces = " " * (2 * i - 1)
+            print(f"{spaces}*{inner_spaces}*")
 
 # Example usage
 if __name__ == "__main__":
@@ -16,7 +17,7 @@ if __name__ == "__main__":
         size = int(input("Enter the size of the triangle: "))
         if size <= 0:
             print("Please enter a positive integer.")
-        elif (n == 1): # if 
+        elif size == 1: # handle if size is only 1
             print("*")
         else:
             print_triangle(size)
