@@ -7,11 +7,15 @@ This repository contains two Python scripts demonstrating different programming 
 
 ## 1. Print Triangle (triangle.py)
 請設計一個函數，輸入為數字，輸出則為*符號為輸入數字邊長的空心正三角形。
+
 輸入: 3
+
 輸出：
+```
   *
  * *
 * * *
+```
 
 This script prints a triangle pattern of a specified size using star sign.
 
@@ -77,3 +81,4 @@ This folder contains a Python script for automated API testing using pytest.
 - Attempt to get a non-existent film with invalid ID
 
 Each test case includes multiple assertions to thoroughly validate the API responses.
+
