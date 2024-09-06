@@ -40,3 +40,40 @@ This script reorders the digits of a given number by placing odd digits in desce
 1. Run the script
 2. Enter a random number when prompted
 3. The script will output the reordered number
+
+## 3. POSTMAN Collection & Environment
+This folder contains the POSTMAN colleciton and the environment file. Simply import them into POSTMAN to execute.
+
+## 4. Pytest API Automation
+This folder contains a Python script for automated API testing using pytest.
+
+### Features:
+- Tests the Star Wars API (SWAPI) endpoints
+- Validates response status codes, schemas, and content
+- Checks response times
+- Verifies data formats and structures
+
+### Requirements:
+- Python 3.x
+- pip (Python package installer)
+
+### Installation:
+1. Navigate to the "4. Pytest API Automation" directory
+2. Install the required packages using pip:
+   ```
+   pip install -r requirements.txt
+   ```
+
+### Usage:
+1. Navigate to the "4. Pytest API Automation" directory
+2. Run the tests using pytest:
+   ```
+   pytest API_Automation.py
+   ```
+
+### Test Cases:
+- Get all films API endpoint
+- Get a specific film API endpoint
+- Attempt to get a non-existent film with invalid ID
+
+Each test case includes multiple assertions to thoroughly validate the API responses.
